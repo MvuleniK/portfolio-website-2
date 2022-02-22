@@ -23,7 +23,7 @@
             <table id="header">
                 <tr>
                     <td>
-                        <img class="logo" src="./asset/image/logo.png" alt="LOGO" >
+                        <a href="index.html"><img class="logo" src="./asset/image/logo.png" alt="LOGO" ></a>
                     </td>
 
                     <td align="right">
@@ -44,97 +44,179 @@
 
             <div class="messageblock" >
                 
-              <!--- <table border="1" align="center" id=" contactdash1">
+              <!--<table border="1" align="center" id=" contactdash1">
                     <tr>
                         <td>
                             <img src="./asset/image/back1.jpg" alt="img1">
                         </td>
                     </tr>
-                </table> -->
+                </table>---->
 
 
 
                 <table border="0" align="center" class= "contactdash2">
 
+         
                     <tr>
                         <td>
-                            <h1 style="text-align: center;">
-                                Have a question or comment?
+                            <h1 id= "emailheader" style="text-align: center;">
+                                
                             </h1>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <p>
-                                Shoot me email a message.
-                                I read every email and will get back to you within two business days.
+                            <p id="mailMessage" >
+
+                            
                             </p>
                         </td>
                     </tr>
 
                 </table>
 
-            
+                <!---- Formspree API Key goes here---->
+                <form  action="https://formspree.io/f/moqrdybl" method="post">
+                    <table class="submissionbox" border="0" align="center" >
 
-                <table class="submissionbox" border="0" align="center" >
+                                <tr>
 
-                            <tr>
+                                    <td>
+                                        Full Name:
+                                    </td>
 
-                                <td>
-                                    Full Name :
-                                </td>
+                                    <td>
+                                        <input type="text" name="name" placeholder="First name">
+                                    </td>
 
-                                <td>
-                                    <input placeholder = "Firstname">
-                                </td>
+                                    <td>
+                                        <input type="text" name="name" placeholder="Second name">
+                                    </td>
 
-                                <td>
-                                    <input placeholder="Lastname">
-                                </td>
+                                </tr>
 
-                            </tr>
+                                <!---- A Drop- Down List---->
+                                <tr>
+                                    <td>
+                                        Email Subject:
+                                    </td>
 
-                            <tr>
+                                    <td>
+                                        <input type="text" name="subject" placeholder="Subject">
+                                    </td>
 
-                                <td>
-                                    Message :
-                                </td>
+                                </tr>
 
-                                <td>
-                                    <textarea cols= "38 " rows="20" placeholder="Insert your message"></textarea>
-                                </td>
+                                <tr>
 
-                            </tr>
+                                    <td>
+                                        Message:
+                                    </td>
 
+                                    <td>
+                                        <textarea cols= "38 " rows="20"  name="message" placeholder="Insert your message"></textarea>
+                                    </td>
 
-                            <tr>
-
-                                <td>
-                                    Email:
-                                </td>
-
-                                <td>
-                                    <input placeholder = "E-mail">
-                                </td>
-
-                            </tr>
+                                </tr>
 
 
-                            <tr>
-                                <td>
-                                    <input type="submit" value="submit">
-                                </td>
-                            </tr>
+                                <tr>
 
+                                    <td>
+                                        Mobile Number:
+                                    </td>
+
+                                    <td>
+                                        <input type="tel" name="Contact number" placeholder="Contact number">
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>
+                                        Email:
+                                    </td>
+
+                                    <td>
+                                        <input type="email" name="_replyto" placeholder="Your email">
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <input type="submit" value="Send">
+                                    </td>
+                                </tr>
+
+                    </table>
+
+                </form>    
+
+            </div>
+
+            <!------------ Embedded Map--------------->
+            <div "schoolMap" align="center">
+
+                <table>
+                    <tr>
+                        <td>
+                            <iframe alt="Google Map not available" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.1689397357864!2d27.901094514529216!3d-26.158626968473772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a015c38b075b%3A0x76f3847633f19be1!2sUNISA%20-%20Florida%20Campus!5e0!3m2!1sen!2sza!4v1645473641100!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </td>
+                    </tr>
                 </table>
-
+                
             </div>
 
 
 
 
+
         </main>
+
+
+
+        <!---- Javascript type:text/javascript src ="./index.js"----->
+
+            <script>
+
+                document.getElementById('emailheader').innerHTML = 'Have a question or comment?';
+                document.getElementById('mailMessage').innerHTML = " Shoot me an email message I read every email and will get back to you within two business days";
+                //alert('Contact Page')
+
+
+
+
+
+                //var celsius  = 100;  
+
+                //Using operators to convert from Celsius to Fahrenheit
+                //To convert temperatures in degrees Celsius to Fahrenheit, 
+                //multiply by 1.8 (or 9/5) and add 32.
+                //var fahrenheit = celsius  * 9 / 5 + 32;  
+
+                //var message = celsius +' C is ' + fahrenheit + ' F.';  
+                //console.log(message);
+
+                //To convert temperatures in degrees Fahrenheit to Celsius, 
+                //subtract 32 and multiply by .5556 (or 5/9).
+                // And back to Celsius to validate the answer
+                //var fahrenheitToCelsius = (fahrenheit - 32) * 5 / 9;  
+
+                //message = fahrenheit +' F is ' + fahrenheitToCelsius + ' C.';  
+
+                //console.log(message);
+
+
+
+                
+
+            </script>
+        
 
 
     </body>
@@ -163,9 +245,9 @@
         <table class = "legal" border="0" style="text-align: center;">
             <tr>
                 <td><a style="color: #ffffff;" href="#">© 2022 MVULENI KEKANA</a> </td>
-                <td><a style="color: #ffffff;" href="#">PRIVACY POLICY</a> </td>
-                <td><a style="color: #ffffff;" href="#">DISCLAIMER</a> </td>
-                <td><a style="color: #ffffff;" href="#">TERMS OF USE</a> </td>
+                <td><a style="color: #ffffff;" href="./asset/legal/Privacy Policy.pdf">PRIVACY POLICY</a> </td>
+                <td><a style="color: #ffffff;" href="./asset/legal/Discliamer.pdf">DISCLAIMER</a> </td>
+                <td><a style="color: #ffffff;" href="./asset/legal/Terms of Use.pdf">TERMS OF USE</a> </td>
 
             </tr>
         </table>

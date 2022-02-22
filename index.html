@@ -23,7 +23,7 @@
             <table id="header">
                 <tr>
                     <td>
-                        <img class="logo" src="./asset/image/logo.png" alt="LOGO" >
+                        <a href="#"><img class="logo" src="./asset/image/logo.png" alt="LOGO" ></a>
                     </td>
 
                     <td align="right">
@@ -44,7 +44,7 @@
 
                 <tr>
                     <td colspan="2"> 
-                        <video  controls  poster="./asset/image/thumbnail.png" src="./asset/video/video.mp4">
+                        <video id="homeVideo"  controls  poster="./asset/image/thumbnail.png" src="./asset/video/video.mp4">
                             Your browser does not support the video tag.
                         </video>
                     </td>
@@ -54,8 +54,8 @@
                     <td width="50%" align="center">
                         <div class="biobox">
 
-                            <h1>Mvuleni Kekana</h1>
-                            <p style="text-align: justify;">
+                            <h1 id="homeName"> Mvuleni Kekana </h1>
+                            <p class="homepara" style="text-align: justify;">
                                 I am an aspiring electrical engineer still building a career in the technical field.
                                 my current career is built on freelance consulting,  technical investigations and design 
                                 work and industrial installations in the field of electrical building service electrical 
@@ -72,13 +72,14 @@
                                 through the deeds of trial and error. As of writing , I am enjoying learning about various
                                 technologies of software development and data science.
                             </p>
-                            <button class="btn" href="aboutme.html" >Know me more</button>
+                            <a href="aboutme.html"  ><button class="btn" >Know me more</button></a>
+                            
 
                         </div>
 
                     </td>
                     <td align="center">
-                        <img id="selfimage" src="./asset/image/image1.jpg" alt="selfimage">
+                        <img id="selfimage" alt="selfimage" src = "./asset/image/image1.jpg" >
                     </td>
                 </tr>
 
@@ -142,9 +143,9 @@
                 <table class = "legal">
                     <tr>
                         <td><a style="color: #ffffff;" href="#">© 2022 MVULENI KEKANA</a> </td>
-                        <td><a style="color: #ffffff;" href="#">PRIVACY POLICY</a> </td>
-                        <td><a style="color: #ffffff;" href="#">DISCLAIMER</a> </td>
-                        <td><a style="color: #ffffff;" href="#">TERMS OF USE</a> </td>
+                        <td><a style="color: #ffffff;" href="./asset/legal/Privacy Policy.pdf">PRIVACY POLICY</a> </td>
+                        <td><a style="color: #ffffff;" href="./asset/legal/Discliamer.pdf">DISCLAIMER</a> </td>
+                        <td><a style="color: #ffffff;" href="./asset/legal/Terms of Use.pdf">TERMS OF USE</a> </td>
 
                     </tr>
                 </table>
@@ -155,6 +156,12 @@
 
     </footer>
 
+
+            <!---- Call  Javascript here src ="./index.js"----->
+
+            <script src="./index.js">
+                
+            </script>
 
 
 </html>
